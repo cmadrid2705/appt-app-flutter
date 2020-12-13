@@ -14,7 +14,7 @@ class _ContactPageState extends State<ContactPage> {
 
   static final CameraPosition _contactLocation = CameraPosition(
       bearing: 192.8334901395799,
-      target: LatLng(21.276098, -157.82886),
+      target: LatLng(15.061169, -88.750052),
       tilt: 59.440717697143555,
       zoom: 18.151926040649414);
 
@@ -25,9 +25,9 @@ class _ContactPageState extends State<ContactPage> {
     final MarkerId markerId = MarkerId(markerIdVal);
     final Marker marker = Marker(
       markerId: markerId,
-      position: LatLng(21.276098, -157.82886),
+      position: LatLng(15.061169, -88.750052),
       infoWindow: InfoWindow(
-          title: 'Best Barbers & Salon', snippet: 'Waikiki Beach, Honolulu HI'),
+          title: 'Barberia Erick', snippet: 'Barrio El Progreso, La Entrada, Copán'),
     );
     setState(() {
       markers[markerId] = marker;
@@ -89,15 +89,15 @@ class ContactLinks extends StatelessWidget {
     return Column(
       children: <Widget>[
         SizedBox(height: 16),
-        Text('Phone: 1-888-999-0000'),
+        Text('Telefono: +504 9819-5153'),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset(
-              'assets/images/icons/twitter-48.png',
-              height: 24.0,
-            ),
-            Text('@bestbarberssalon'),
+            // Image.asset(
+            //   'assets/images/icons/twitter-48.png',
+            //   height: 24.0,
+            // ),
+            Text('@correo.com'),
           ],
         ),
       ],
@@ -116,25 +116,25 @@ class ContactHours extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Column(
-          children: <Widget>[Text('Sun'), Text('CLOSED')],
+          children: <Widget>[Text('Dom'), Text('CERRADO')],
         ),
         Column(
-          children: <Widget>[Text('Mon'), Text('8-5')],
+          children: <Widget>[Text('Lun'), Text('8-5')],
         ),
         Column(
-          children: <Widget>[Text('Tue'), Text('8-5')],
+          children: <Widget>[Text('Mart'), Text('8-5')],
         ),
         Column(
-          children: <Widget>[Text('Wed'), Text('8-5')],
+          children: <Widget>[Text('Mie'), Text('8-5')],
         ),
         Column(
-          children: <Widget>[Text('Thu'), Text('8-5')],
+          children: <Widget>[Text('Jue'), Text('8-5')],
         ),
         Column(
-          children: <Widget>[Text('Fri'), Text('8-10')],
+          children: <Widget>[Text('Vie'), Text('8-10')],
         ),
         Column(
-          children: <Widget>[Text('Sat'), Text('8-10')],
+          children: <Widget>[Text('Sa'), Text('8-10')],
         ),
       ],
     );
@@ -158,8 +158,8 @@ class ContactLocation extends StatelessWidget {
               color: Colors.red[400],
               size: 42,
             ),
-            Text('Location: ', style: TextStyle(fontWeight: FontWeight.bold)),
-            Text(' Waikiki Beach, Honolulu, HI'),
+            Text('Ubicación: ', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text(' Barrio El Progreso, La Entrada, Copán'),
           ],
         )
       ],

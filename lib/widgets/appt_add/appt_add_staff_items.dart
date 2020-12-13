@@ -24,7 +24,7 @@ class ApptAddStaffItems extends StatelessWidget {
           child: ChoiceChip(
               backgroundColor: Colors.white,
               padding: EdgeInsets.all(8),
-              selectedColor: Theme.of(context).accentColor,
+              selectedColor: Color(0xff0435d1),
               elevation: 2,
               avatar: CircleAvatar(
                 backgroundImage: AssetImage(staffData[index].imageAsset),

@@ -47,7 +47,7 @@ class ApptAddServiceItems extends StatelessWidget {
                             style: Styles.mediumText,
                           ),
                           Text(
-                            '\$' + servicesData[index].price,
+                            '\L' + servicesData[index].price,
                             style: Styles.mediumText,
                           ),
                         ],
@@ -58,7 +58,7 @@ class ApptAddServiceItems extends StatelessWidget {
                       style: Styles.mediumText,
                     ),
                     trailing:
-                        Icon(Icons.add, color: Theme.of(context).accentColor),
+                        Icon(Icons.add, color: Colors.blue),
                   ),
                 ),
               ),

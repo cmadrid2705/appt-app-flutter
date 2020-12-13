@@ -16,7 +16,7 @@ import 'package:appt_app/services/auth_services.dart';
 import 'package:appt_app/blocs/auth_bloc.dart';
 
 void main() async {
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+ 
   runApp(MainApp());
 }
 
@@ -72,66 +72,70 @@ class _AppScaffoldState extends State<AppScaffold> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60),
         child: AppBar(
+          backgroundColor: Color(0xff0435d1),
           centerTitle: false,
           elevation: 1,
           title: Text(
-            'Best Barbers & Salon',
-            style: Styles.pageTitleText,
+            'Barberia Erick' ,
+            style: TextStyle(color: Colors.white ),
+            // style: Styles.pageTitleText,
+            
+            
           ),
-          actions: <Widget>[
-            StreamBuilder<User>(
-              stream: auth.onAuthStateChanged,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.active) {
-                  User user = snapshot.data;
-                  if (user == null) {
-                    return new CircleAvatarAppBar(
-                      photoUrl: '',
-                      displayName: 'Guest',
-                    );
-                  } else {
-                    return new CircleAvatarAppBar(
-                      photoUrl: user.photoUrl,
-                      displayName: user.displayName,
-                    );
-                  }
-                } else {
-                  return new CircleAvatarAppBar(photoUrl: '');
-                }
-              },
-            ),
-          ],
+          // actions: <Widget>[
+          //   StreamBuilder<User>(
+          //     stream: auth.onAuthStateChanged,
+          //     builder: (context, snapshot) {
+          //       if (snapshot.connectionState == ConnectionState.active) {
+          //         User user = snapshot.data;
+          //         if (user == null) {
+          //           return new CircleAvatarAppBar(
+          //             photoUrl: '',
+          //             displayName: 'usuario',
+          //           );
+          //         } else {
+          //           return new CircleAvatarAppBar(
+          //             photoUrl: user.photoUrl,
+          //             displayName: user.displayName,
+          //           );
+          //         }
+          //       } else {
+          //         return new CircleAvatarAppBar(photoUrl: '');
+          //       }
+          //     },
+          //   ),
+          // ],
         ),
       ),
       body: _allNavPages[_currentNavPage],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentNavPage,
         backgroundColor: Colors.grey[200],
-        selectedItemColor: Theme.of(context).accentColor,
-        unselectedItemColor: Colors.black,
+        selectedItemColor: Color(0xff0435d1),
+        unselectedItemColor: Colors.blue,
         type: BottomNavigationBarType.fixed,
         onTap: onBottomNavTap,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            title: Text('Inicio'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.content_cut),
-            title: Text('Service'),
+            title: Text('Servicios'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.people),
-            title: Text('About'),
+            title: Text('Acerca de'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help_outline),
-            title: Text('Contact'),
+            title: Text('Contacto'),
           )
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Color(0xff0435d1),
         onPressed: () {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => ApptAdd()));

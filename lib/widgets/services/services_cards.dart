@@ -27,7 +27,7 @@ class ServicesCards extends StatelessWidget {
                   SizedBox(
                     width: 30,
                     child: Text(
-                      '\$${servicesData[index].price}',
+                      '\L${servicesData[index].price}',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),

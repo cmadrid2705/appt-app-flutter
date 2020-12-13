@@ -18,6 +18,7 @@ dependencies:
   google_maps_flutter: ^0.5.21
   carousel_slider: ^1.3.1
   shimmer: 1.0.0
+  toast: ^0.1.5
 
 dev_dependencies:
   flutter_test:
@@ -28,8 +29,9 @@ flutter:
   assets:
     - assets/images/best-barber.jpg
     - assets/images/barber-1.jpg
-    - assets/images/barber-2.jpg
-    - assets/images/barber-3.jpg 
+    - assets/images/Carlos.jpg
+    - assets/images/Josue.jpg
+    - assets/images/Jennifer.jpg 
     - assets/images/icons/apple-pay-48.png
     - assets/images/icons/visa-48.png
     - assets/images/icons/mastercard-48.png
@@ -37,12 +39,28 @@ flutter:
     - assets/images/icons/twitter-48.png
     - assets/images/icons/facebook-logo.png
     - assets/images/icons/google-logo.png
-  fonts:
-    - family: PlayfairDisplay
-      fonts:
-        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
-        - asset: assets/fonts/PlayfairDisplay-Italic.ttf
-          style: italic
-        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
-          weight: 700
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
 
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

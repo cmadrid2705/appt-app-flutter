@@ -4,40 +4,40 @@ class ServicesRepository {
   static const _allServices = <Service>[
     Service(
       id: 1,
-      description: 'Professional Haircut \n"The Usual"',
-      price: '28',
+      description: 'Corte de pelo caballero ',
+      price: '130',
       serviceMinutes: 30,
     ),
     Service(
       id: 2,
-      description: 'Head Shave \n"The No Comb Dome"',
-      price: '22',
-      serviceMinutes: 20,
+      description: 'Corte de pelo niño ',
+      price: '100',
+      serviceMinutes: 25,
     ),
     Service(
       id: 3,
-      description: 'Straight Razor Shave \n"The Edge"',
-      price: '28',
-      serviceMinutes: 20,
+      description: 'Corte de pelo con barba',
+      price: '200',
+      serviceMinutes:45,
     ),
     Service(
       id: 4,
       description:
-          'Prefessional Haircut for Seniors 65 and older, or 12 and Under',
-      price: '25',
-      serviceMinutes: 30,
+          'Barba',
+      price: '70',
+      serviceMinutes: 15,
     ),
     Service(
       id: 5,
-      description: 'Buzz Cut \n"The High-and-Tight"',
-      price: '17',
+      description: 'Afeitado de cabeza',
+      price: '150',
       serviceMinutes: 30,
     ),
     Service(
       id: 6,
-      description: 'Shampoo and Conditioning \n"The Fresh Start"',
-      price: '40',
-      serviceMinutes: 45,
+      description: 'Limpieza facial',
+      price: '100',
+      serviceMinutes: 20,
     ),
   ];
 

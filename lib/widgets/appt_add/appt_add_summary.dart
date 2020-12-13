@@ -3,6 +3,8 @@ import 'package:appt_app/models/staff_model.dart';
 import 'package:appt_app/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:appt_app/widgets/user/user_pending_appts.dart';
+import 'package:toast/toast.dart';
 
 class ApptAddSummary extends StatelessWidget {
   const ApptAddSummary({
@@ -76,7 +78,7 @@ class ApptAddSummary extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 16, bottom: 8),
                 child: Text(
-                  'Barber / Stylist',
+                  'Barbero',
                   style: Styles.apptSectionText,
                 ),
               ),
@@ -87,7 +89,7 @@ class ApptAddSummary extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 16, bottom: 8),
                 child: Text(
-                  'Services',
+                  'Servicios',
                   style: Styles.apptSectionText,
                 ),
               ),
@@ -112,27 +114,31 @@ class ApptAddSummary extends StatelessWidget {
                           color: Colors.green,
                         ),
                       ),
-                      Text('Looks Good.  BOOK IT!'),
+                      Text('Se ve bien. ¡RESERVAR!'),
                     ],
                   ),
                   color: Colors.white,
                   padding: EdgeInsets.all(16),
-                  onPressed: () => {},
+                  onPressed: () {
+                    showToast('La reserva se creo exitosamente!', context,
+                        duration: Toast.LENGTH_LONG, gravity: Toast.CENTER);
+                        Navigator.pop(context);
+                  },
                 ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    '* Disclaimer *',
+                    '* **** *',
                     style: TextStyle(color: Theme.of(context).accentColor),
                   ),
                   Text(
-                    ' This is only a sample application',
+                    ' ******',
                     style: TextStyle(color: Theme.of(context).accentColor),
                   ),
                   Text(
-                    'No actual scheduling or haircuts will occur',
+                    '******',
                     style: TextStyle(color: Theme.of(context).accentColor),
                   ),
                 ],
@@ -142,5 +148,13 @@ class ApptAddSummary extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void showToast(String msg, context, {int duration, int gravity}) {
+    Toast.show(msg, context,
+        duration: duration,
+        gravity: gravity,
+        backgroundColor: Colors.blue,
+        border: Border.all(width: 3, color: Colors.deepOrange));
   }
 }

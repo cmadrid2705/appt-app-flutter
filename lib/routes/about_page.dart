@@ -39,7 +39,7 @@ class AboutBlub extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'Experienced in the Tonsorial Arts',
+            'La elegancia nos importa',
             style: Styles.sectionTitleText,
           ),
           SizedBox(height: 16),
@@ -47,7 +47,7 @@ class AboutBlub extends StatelessWidget {
             padding: const EdgeInsets.all(22),
             color: Colors.blueGrey[100],
             child: Text(
-              '"Tonsorial" is a fancy word that describes the work of those who give shaves and haircuts. (It can apply more broadly to hairdressers as well.) It derives from the Latin verb tondēre, meaning "to shear, clip or crop." (Another descendant, "tonsor," is an archaic word for a barber.)',
+              'Somos una barbería la cual te transportara a la clásica y antigua Barberia Inglesa, donde lo mas importante es que vivas la experiencia absoluta de un excelente corte de cabello y un buen afeitado, tengas o no tengas barba, obteniendo asi el look del Dandy antiguo con clase, con un toque moderno sin perder el estilo, masculinidad y buen gusto que seguro te caracteriza.',
               textAlign: TextAlign.justify,
             ),
           ),
@@ -67,7 +67,7 @@ class AboutStaffIntro extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20, bottom: 10, left: 20),
       child: Text(
-        'Meet Our Talented Team:',
+        'Conoce nuestro equipo:',
         style: Styles.sectionTitleText,
       ),
     );

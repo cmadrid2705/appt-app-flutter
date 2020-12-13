@@ -16,14 +16,14 @@ class LandingPage extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 16),
           child: Image.asset(
             'assets/images/best-barber.jpg',
-            semanticLabel: 'Best Barbers & Salon',
+            semanticLabel: 'Barberia Erick',
           ),
         ),
         Expanded(
           child: ListView(
             children: <Widget>[
               Text(
-                'Welcome to Best Barbers & Salon!',
+                'Bienvenidos a la mejor Barberia!',
                 textAlign: TextAlign.center,
                 style: Styles.sectionTitleText,
               ),
@@ -32,7 +32,7 @@ class LandingPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    '"We Don\'t',
+                    '"Tu look\'',
                     textAlign: TextAlign.center,
                     style: Styles.sectionTitleText,
                   ),
@@ -41,7 +41,7 @@ class LandingPage extends StatelessWidget {
                     child: Icon(Icons.content_cut),
                   ),
                   Text(
-                    'Cut Corners"',
+                    'tu estilo"',
                     textAlign: TextAlign.center,
                     style: Styles.sectionTitleText,
                   ),

@@ -22,7 +22,7 @@ class CircleAvatarGeneric extends StatelessWidget {
       return CircleAvatar(
         child: Text(userInitial, style: TextStyle(fontSize: fontSize)),
         radius: radius,
-        foregroundColor: Colors.white,
+        foregroundColor: Colors.black45,
       );
     }
     return CircleAvatar(

@@ -21,11 +21,11 @@ class ServicesPage extends StatelessWidget {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 16, bottom: 16),
-              child: new ServicesRatings(),
+              // child: new ServicesRatings(),
             ),
-            new ServicesQuotes(),
+            // new ServicesQuotes(),
             new ServicesCards(servicesData: servicesData),
-            new ServicesCheckMarkedChips(),
+            // new ServicesCheckMarkedChips(),
             Divider(height: 12, color: Colors.black),
             new ServicesPayments(),
             Divider(height: 12, color: Colors.black),

@@ -24,7 +24,7 @@ class ApptAdd extends StatelessWidget {
           centerTitle: false,
           elevation: 1,
           title: Text(
-            'Schedule Appointment',
+            'Reserva tu cita',
             style: Styles.pageTitleText,
           ),
         ),
@@ -109,11 +109,12 @@ class UserLoggedIn extends StatelessWidget {
                     child: FloatingActionButton(
                       child: Text('1'),
                       mini: true,
+                      backgroundColor: Color(0xff0435d1),
                       onPressed: () => {},
                     ),
                   ),
                   Text(
-                    'Choose Services (one, or more)',
+                    'Elige los servicios  (uno, o más)',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
@@ -144,9 +145,9 @@ class UserLoggedIn extends StatelessWidget {
                             ),
                     ),
                     Text(
-                      'Total Time (' +
+                      'Tiempo total (' +
                           model.totalServiceTime.toString() +
-                          ' Minutes)',
+                          ' Minutos)',
                       style: TextStyle(
                           color: model.totalServiceTime <= 120
                               ? Colors.black
@@ -166,7 +167,7 @@ class UserLoggedIn extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 18.0),
                           child: Text(
-                            'For Appointments longer than 2 hours...\nPlease, contact us',
+                            'Tu cita durará más de 2 horas...\n por favor, contáctanos',
                             style: TextStyle(
                                 color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.bold),
@@ -186,11 +187,12 @@ class UserLoggedIn extends StatelessWidget {
                     child: FloatingActionButton(
                       child: Text('2'),
                       mini: true,
+                       backgroundColor: Color(0xff0435d1),
                       onPressed: () => {},
                     ),
                   ),
                   Text(
-                    'Preferred Barber / Stylist',
+                    'Selecciona tu barbero',
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w500),
                   ),
@@ -205,12 +207,13 @@ class UserLoggedIn extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 8, left: 8),
                     child: FloatingActionButton(
                       child: Text('3'),
+                       backgroundColor: Color(0xff0435d1),
                       mini: true,
                       onPressed: () => {},
                     ),
                   ),
                   Text(
-                    'Date & Time',
+                    'Fecha y hora',
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w500),
                   ),
@@ -226,12 +229,13 @@ class UserLoggedIn extends StatelessWidget {
                     padding: const EdgeInsets.only(right: 8, left: 8),
                     child: FloatingActionButton(
                       child: Text('4'),
+                       backgroundColor: Color(0xff0435d1),
                       mini: true,
                       onPressed: () => {},
                     ),
                   ),
                   Text(
-                    'Appointment Summary',
+                    'Resumen de tu cita',
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w500),
                   ),

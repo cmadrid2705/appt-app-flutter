@@ -19,7 +19,7 @@ class ApptAddCartItems extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Card(
-                      color: Theme.of(context).accentColor,
+                      color: Color(0xff0435d1),
                       child: InkWell(
                         onTap: () {
                           model.removeServiceFromCart(model

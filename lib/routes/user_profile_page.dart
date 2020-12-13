@@ -19,7 +19,7 @@ class UserProfilePage extends StatelessWidget {
         automaticallyImplyLeading: true,
         centerTitle: false,
         title: Text(
-          'User Profile',
+          'Perfil de Usuario',
           style: Styles.pageTitleText,
         ),
         elevation: 1,

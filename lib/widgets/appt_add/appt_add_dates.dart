@@ -37,7 +37,7 @@ class ApptAddDates extends StatelessWidget {
             child: Card(
               color: model.apptPreferredDateInCart == null
                   ? Colors.white
-                  : Theme.of(context).accentColor,
+                  : Color(0xff0435d1),
               elevation: 2,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(32)),
@@ -54,11 +54,11 @@ class ApptAddDates extends StatelessWidget {
                               children: <Widget>[
                                 Icon(
                                   Icons.calendar_today,
-                                  color: Theme.of(context).accentColor,
+                                  color: Color(0xff0435d1),
                                 ),
                                 SizedBox(width: 8),
                                 Text(
-                                  'Choose A Date',
+                                  'Elige Fecha y hora',
                                   style: Styles.mediumText,
                                 )
                               ],
